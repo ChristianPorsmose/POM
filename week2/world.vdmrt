@@ -1,0 +1,15 @@
+class World
+
+operations 
+
+    public Scenario3: () ==> bool
+    Scenario3() == (
+        MySystem`boiler.PumpOn();
+        MySystem`boiler.Step(20);
+        MySystem`boiler.PumpOff();
+        MySystem`boiler.ValveOn();
+        MySystem`boiler.Step(200);
+        return true;
+    );
+
+end World
